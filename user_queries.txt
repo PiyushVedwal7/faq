@@ -1,0 +1,51 @@
+Q: How do I update my registered mobile number or email?
+A: You can update your details by visiting the nearest branch with valid identification.
+
+Q: How do I update my registered mobile
+A: An error occurred: No API key provided. You can set your API key in code using 'openai.api_key = <API-KEY>', or you can set the environment variable OPENAI_API_KEY=<API-KEY>). If your API key is stored in a file, you can point the openai module at it with 'openai.api_key_path = <PATH>'. You can generate API keys in the OpenAI web interface. See https://platform.openai.com/account/api-keys for details.
+
+Q: How do I update my registered mobile number or email?
+A: You can update your details by visiting the nearest branch with valid identification.
+
+Q: How do I update my registered mobile number
+A: You can update your details by visiting the nearest branch with valid identification.
+
+Q: How do I update
+A: You can update your details by visiting the nearest branch with valid identification.
+
+Q: ow can I set
+A: You can set up auto payments through internet banking or mobile banking for hassle-free transactions.
+
+Q: new checkbook
+A: You can request a checkbook through mobile banking, internet banking, or by visiting a branch.
+
+Q: new account
+A: To open an account, please visit our nearest branch or apply online through our website.
+
+Q: old acc
+A: An error occurred: No API key provided. You can set your API key in code using 'openai.api_key = <API-KEY>', or you can set the environment variable OPENAI_API_KEY=<API-KEY>). If your API key is stored in a file, you can point the openai module at it with 'openai.api_key_path = <PATH>'. You can generate API keys in the OpenAI web interface. See https://platform.openai.com/account/api-keys for details.
+
+Q: old account
+A: To open an account, please visit our nearest branch or apply online through our website.
+
+Q: money
+A: Yes, you can transfer money via NEFT, RTGS, or IMPS through internet banking or our mobile app.
+
+Q: checque
+A: An error occurred: No API key provided. You can set your API key in code using 'openai.api_key = <API-KEY>', or you can set the environment variable OPENAI_API_KEY=<API-KEY>). If your API key is stored in a file, you can point the openai module at it with 'openai.api_key_path = <PATH>'. You can generate API keys in the OpenAI web interface. See https://platform.openai.com/account/api-keys for details.
+
+Q: cheque
+A: An error occurred: No API key provided. You can set your API key in code using 'openai.api_key = <API-KEY>', or you can set the environment variable OPENAI_API_KEY=<API-KEY>). If your API key is stored in a file, you can point the openai module at it with 'openai.api_key_path = <PATH>'. You can generate API keys in the OpenAI web interface. See https://platform.openai.com/account/api-keys for details.
+
+Q: cheque
+A: An error occurred: No API key provided. You can set your API key in code using 'openai.api_key = <API-KEY>', or you can set the environment variable OPENAI_API_KEY=<API-KEY>). If your API key is stored in a file, you can point the openai module at it with 'openai.api_key_path = <PATH>'. You can generate API keys in the OpenAI web interface. See https://platform.openai.com/account/api-keys for details.
+
+Q: what is todays DATE
+A: Our working hours are Monday to Friday, 9:00 AM to 5:00 PM.
+
+Q: cheque
+A: An error occurred: No API key provided. You can set your API key in code using 'openai.api_key = <API-KEY>', or you can set the environment variable OPENAI_API_KEY=<API-KEY>). If your API key is stored in a file, you can point the openai module at it with 'openai.api_key_path = <PATH>'. You can generate API keys in the OpenAI web interface. See https://platform.openai.com/account/api-keys for details.
+
+Q: How do I update my registered mobile number or email?
+A: You can update your details by visiting the nearest branch with valid identification.
+

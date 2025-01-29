@@ -1,0 +1,30 @@
+What are the bank's working hours?|Our working hours are Monday to Friday, 9:00 AM to 5:00 PM.
+How do I open a bank account?|To open an account, please visit our nearest branch or apply online through our website.
+How can I reset my account password?|You can reset your password by visiting the 'Forgot Password' section on our login page.
+What are the bank's fees for international transfers?|Fees for international transfers vary based on the amount and destination. Please refer to our website for the detailed fee structure.
+How can I check my account balance?|You can check your balance through our mobile app, internet banking, or by visiting an ATM.
+What should I do if I lose my debit or credit card?|Immediately report the loss to our customer support and request to block your card.
+How can I apply for a loan?|You can apply for a loan online through our website or visit the nearest branch for assistance.
+What are the interest rates on savings accounts?|Interest rates vary depending on the type of savings account. Please check our website for updated rates.
+How do I update my registered mobile number or email?|You can update your details by visiting the nearest branch with valid identification.
+Can I transfer money to another bank?|Yes, you can transfer money via NEFT, RTGS, or IMPS through internet banking or our mobile app.
+What documents are required to open a bank account?|You need a government-issued ID (passport, Aadhaar, etc.), proof of address, and passport-size photographs.
+How do I enable internet banking for my account?|Register for internet banking on our website or visit your nearest branch for activation.
+Is my money safe in the bank?|Yes, we use advanced security measures and insurance policies to ensure your money is safe.
+What should I do if there is an unauthorized transaction on my account?|Report unauthorized transactions to our customer support immediately for investigation.
+How can I set up automatic bill payments?|You can set up auto payments through internet banking or mobile banking for hassle-free transactions.
+How can I deposit money into my account?|You can deposit money at an ATM with a deposit feature, through a bank teller, or via online transfers.
+What is the minimum balance required for a savings account?|The minimum balance requirement depends on the type of savings account. Check our website for details.
+Can I open a bank account online?|Yes, you can apply online, but verification might require an in-person visit.
+How do I get a new checkbook?|You can request a checkbook through mobile banking, internet banking, or by visiting a branch.
+What is the difference between a current account and a savings account?|A savings account is for personal savings with interest, while a current account is for businesses with high transaction limits.
+How can I close my bank account?|Visit your nearest branch with identification and submit an account closure request.
+What happens if I forget my ATM PIN?|You can reset your ATM PIN through our mobile app, internet banking, or by visiting an ATM.
+Can I get a statement of my account?|Yes, you can download your statement through internet banking, mobile banking, or request a printed copy from your branch.
+How do I stop a recurring payment from my account?|You can cancel recurring payments via internet banking or by contacting customer support.
+What is the eligibility for a home loan?|Eligibility is based on income, credit score, and employment status. Visit our website or branch for details.
+What are the security measures in place to protect my account?|We use multi-factor authentication, encryption, and fraud detection systems to secure your account.
+Can I link multiple accounts to my mobile banking?|Yes, you can link multiple accounts for easy access in mobile banking.
+How do I transfer my account to another branch?|Submit a request at your current branch along with your updated address proof.
+What should I do if my ATM card is stuck in an ATM?|Contact customer support immediately and do not share any personal details with strangers near the ATM.
+What is the daily withdrawal limit for ATMs?|The limit varies depending on the type of account and card. Please check our website for details.

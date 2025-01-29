@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank FAQ Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        input[type="text"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        #answer {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+        .loading {
+            font-style: italic;
+            color: #888;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bank FAQ Assistant</h1>
+        <form id="faq-form">
+            <label for="question">Ask a question:</label>
+            <input type="text" id="question" name="question" placeholder="Type your question here..." required>
+            <button type="submit">Ask</button>
+        </form>
+        <div id="answer"></div>
+    </div>
+
+    <script>
+        document.getElementById('faq-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const questionInput = document.getElementById('question');
+            const answerDiv = document.getElementById('answer');
+            
+            const question = questionInput.value.trim();
+            if (!question) {
+                answerDiv.innerHTML = '<p class="error">Please enter a question.</p>';
+                return;
+            }
+            
+            answerDiv.innerHTML = '<p class="loading">Fetching answer...</p>';
+            
+            fetch('/ask', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: `question=${encodeURIComponent(question)}`
+            })
+            .then(response => response.json())
+            .then(data => {
+                answerDiv.innerHTML = `<p><strong>Answer:</strong> ${data.answer}</p>`;
+            })
+            .catch(error => {
+                answerDiv.innerHTML = '<p class="error">An error occurred. Please try again.</p>';
+            });
+        });
+    </script>
+</body>
+</html>
