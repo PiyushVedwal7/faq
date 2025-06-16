@@ -1,0 +1,32 @@
+#1 
+SELECT DISTINCT CITY
+FROM STATION
+WHERE LOWER(SUBSTR(CITY, 1, 1)) IN ('a', 'e', 'i', 'o', 'u')
+  AND LOWER(SUBSTR(CITY, -1, 1)) IN ('a', 'e', 'i', 'o', 'u');
+
+
+#2
+SELECT MAX(POPULATION) - MIN(POPULATION) AS PopulationDifference
+FROM CITY;
+
+#3
+SELECT ROUND(
+    SQRT(POWER(MAX(LAT_N) - MIN(LAT_N), 2) + POWER(MAX(LONG_W) - MIN(LONG_W), 2)), 
+    4
+) AS EuclideanDistance
+FROM STATION;
+
+#4
+SELECT ROUND(
+    PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY LAT_N),
+    4
+) AS Median_Latitude
+FROM STATION;
+
+
+#5
+SELECT CITY.Name
+FROM CITY
+JOIN COUNTRY
+  ON CITY.CountryCode = COUNTRY.Code
+WHERE COUNTRY.Continent = 'Africa';
