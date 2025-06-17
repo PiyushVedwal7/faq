@@ -1,0 +1,57 @@
+#1
+from sqlalchemy import create_engine
+
+# Replace with your actual DB details
+src_engine = create_engine("postgresql://user:pass@localhost:5432/source_db")
+dest_engine = create_engine("postgresql://user:pass@localhost:5432/dest_db")
+
+
+#2
+import pandas as pd
+import pyarrow as pa
+import pyarrow.parquet as pq
+import fastavro
+import os
+
+def export_table(table_name):
+    df = pd.read_sql(f"SELECT * FROM {table_name}", src_engine)
+
+    # CSV
+    df.to_csv(f"{table_name}.csv", index=False)
+
+    # Parquet
+    df.to_parquet(f"{table_name}.parquet", index=False)
+
+    # Avro
+    records = df.to_dict(orient='records')
+    schema = {
+        "type": "record",
+        "name": table_name,
+        "fields": [{"name": col, "type": ["string", "null"]} for col in df.columns]
+    }
+    with open(f"{table_name}.avro", 'wb') as out:
+        fastavro.writer(out, schema, records)
+
+
+#3
+def copy_table_to_dest(table_name, selected_cols='*'):
+    df = pd.read_sql(f"SELECT {selected_cols} FROM {table_name}", src_engine)
+    df.to_sql(table_name, dest_engine, if_exists='replace', index=False)
+
+
+#4
+import schedule
+import time
+
+def job():
+    tables = ['users', 'orders']
+    for table in tables:
+        export_table(table)
+        copy_table_to_dest(table)
+
+schedule.every().day.at("02:00").do(job)
+
+while True:
+    schedule.run_pending()
+    time.sleep(1)
+
